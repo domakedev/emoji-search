@@ -5,6 +5,7 @@ import EmojiResults from "./EmojiResults";
 import filterEmoji from "./filterEmoji";
 
 export default class App extends PureComponent {
+
   constructor(props) {
     super(props);
     this.state = {

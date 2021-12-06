@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "./SearchInput.css";
 
 export default class SearchInput extends PureComponent {
+  
   static propTypes = {
     textChange: PropTypes.func
   };
@@ -16,7 +17,7 @@ export default class SearchInput extends PureComponent {
     return (
       <div className="component-search-input">
         <div>
-          <input onChange={this.handleChange} />
+          <input data-testid="principal-input" onChange={this.handleChange} />
         </div>
       </div>
     );
